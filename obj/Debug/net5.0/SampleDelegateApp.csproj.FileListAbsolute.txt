@@ -1,0 +1,16 @@
+C:\Users\Hp\source\repos\SampleDelegateApp\bin\Debug\net5.0\SampleDelegateApp.exe
+C:\Users\Hp\source\repos\SampleDelegateApp\bin\Debug\net5.0\SampleDelegateApp.deps.json
+C:\Users\Hp\source\repos\SampleDelegateApp\bin\Debug\net5.0\SampleDelegateApp.runtimeconfig.json
+C:\Users\Hp\source\repos\SampleDelegateApp\bin\Debug\net5.0\SampleDelegateApp.runtimeconfig.dev.json
+C:\Users\Hp\source\repos\SampleDelegateApp\bin\Debug\net5.0\SampleDelegateApp.dll
+C:\Users\Hp\source\repos\SampleDelegateApp\bin\Debug\net5.0\SampleDelegateApp.pdb
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.AssemblyInfo.cs
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.dll
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\refint\SampleDelegateApp.dll
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.pdb
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\SampleDelegateApp.genruntimeconfig.cache
+C:\Users\Hp\source\repos\SampleDelegateApp\obj\Debug\net5.0\ref\SampleDelegateApp.dll
