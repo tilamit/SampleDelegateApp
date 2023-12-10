@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using static SampleDelegateApp.ProductList;
 
 namespace SampleDelegateApp
 {
@@ -21,9 +22,26 @@ namespace SampleDelegateApp
             List<Product> product = new List<Product>() { p1, p2, p3, p4, p5, p6 };
 
             //Invoke ShowProducts using appropriate delegate
-            ShowProducts("Less Costly:", product, IsLessCostly);
-            ShowProducts("Costly:", product, IsCostly);
-            ShowProducts("Too Costly:", product, IsTooCostly);
+            //ShowProducts("Less Costly:", product, IsLessCostly);
+            //ShowProducts("Costly:", product, IsCostly);
+            //ShowProducts("Too Costly:", product, IsTooCostly);
+
+            //Multicast delegate
+            ProductList productList = new ProductList();
+
+            GetCostWiseProducts productLst = null;
+            
+            productLst += new GetCostWiseProducts(productList.GetLessCostly);
+            productLst += new GetCostWiseProducts(productList.GetCostly);
+            productLst += new GetCostWiseProducts(productList.GetTooCostly);
+
+            foreach (GetCostWiseProducts item in productLst.GetInvocationList())
+            {
+                var result = item(product);
+                Console.WriteLine(result);
+
+                Console.WriteLine("\n");
+            }
 
             Console.Read();
             //Delegate part - Ends
@@ -66,11 +84,5 @@ namespace SampleDelegateApp
             return p.Price >= 100;
         }
         //Filters end
-    }
-
-    public class Product
-    {
-        public string Name { get; set; }
-        public int Price { get; set; }
     }
 }
