@@ -26,13 +26,13 @@ namespace SampleDelegateApp
             //ShowProducts("Costly:", product, IsCostly);
             //ShowProducts("Too Costly:", product, IsTooCostly);
 
-            //Multicast delegate
+            //Multicast delegate - Starts
             ProductList productList = new ProductList();
 
             GetCostWiseProducts productLst = null;
             
-            productLst += new GetCostWiseProducts(productList.GetLessCostly);
-            productLst += new GetCostWiseProducts(productList.GetCostly);
+            productLst -= new GetCostWiseProducts(productList.GetLessCostly); //Remove method from delegate list
+            productLst += new GetCostWiseProducts(productList.GetCostly); //Add method from delegate list
             productLst += new GetCostWiseProducts(productList.GetTooCostly);
 
             foreach (GetCostWiseProducts item in productLst.GetInvocationList())
@@ -42,6 +42,7 @@ namespace SampleDelegateApp
 
                 Console.WriteLine("\n");
             }
+            //Multicast delegate - Ends
 
             Console.Read();
             //Delegate part - Ends

@@ -8,6 +8,7 @@ namespace SampleDelegateApp
 {
     public class ProductList
     {
+        //Delegate declared or signature
         public delegate string GetCostWiseProducts(List<Product> productLst);
 
         Product p1 = new Product() { Name = "Photo Frame", Price = 40 };
@@ -22,7 +23,10 @@ namespace SampleDelegateApp
             int products = productLst.Where(c => c.Price <= 10).Count();
 
             str = new StringBuilder();
-            return str.Append("Total less costly products " + products).ToString();
+            str.Append("Total less costly products");
+            str.Append(products);
+
+            return str.ToString();
         }
 
         public string GetCostly(List<Product> productLst)
@@ -31,7 +35,10 @@ namespace SampleDelegateApp
             int products = productLst.Where( c=> c.Price > 10 && c.Price < 100).Count();
 
             str = new StringBuilder();
-            return str.Append("Total costly products " + products).ToString();
+            str.Append("Total costly products");
+            str.Append(products);
+
+            return str.ToString();
         }
 
         public string GetTooCostly(List<Product> productLst)
@@ -40,7 +47,10 @@ namespace SampleDelegateApp
             int products = productLst.Where(c => c.Price >= 100).Count();
 
             str = new StringBuilder();
-            return str.Append("Total too costly products " + products).ToString();
+            str.Append("Total too costly products ");
+            str.Append(products);
+
+            return str.ToString();
         }
     }
 }
